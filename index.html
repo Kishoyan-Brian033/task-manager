@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>User Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <h2>Task management system</h2>
+        </div>
+        <div class="main">
+
+        <div class="user-container">
+            <div class="container">
+                <h2>User Manager</h2>
+                <div class="form">
+                    <h4>Add User</h4>
+                    <h3>Add new user</h3>
+                    <input type="text" placeholder="Enter Username" id="username" name="name" />
+                    <input type="text" placeholder="Enter user email" id="user-email" name="email" />
+                    <div class="all-btns">
+                        <button type="submit" id="user-btn">Add User</button>
+
+                    </div>
+                </div>
+
+                <div class="all-user">
+                    <div class="user-list">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="task-container">
+            <h2>Task Manager</h2>
+            <div class="form">
+                <h4>Add Task</h4>
+                <h3>Add new Tasks</h3>
+                <input type="text" name="name" placeholder="Enter Task Title" id="task-title" />
+                <textarea id="description" placeholder="Description"></textarea>
+                <div class="all-btns">
+                    <button id="add-task">Add to Task list</button>
+                    
+                </div>
+            </div>
+
+            <div class="form">
+                <h4>Assign Task</h4>
+                <input type="number" id="assign-task" placeholder=" Enter User ID">
+                <input type="number" id="assign-task" placeholder="Enter Task Id">
+               
+            </div>
+
+            <div class="all-tasks">
+                <div id="tasksList" class="list-container"></div>
+            </div>
+             <div class="all-btns">
+                    <button id="assignTaskBtn">Assign Task</button>
+                    <button id="unassign-task">Unassign Task</button>
+                </div>
+        </div>
+
+            </div>
+    </div>
+
+    <script src="./dist/app.js"></script>
+</body>
+</html>
