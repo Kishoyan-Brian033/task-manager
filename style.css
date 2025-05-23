@@ -15,7 +15,7 @@ body {
 }
 
 .main-container {
-    max-width: 60%;
+    width: 100%;
     gap: 5px;
     margin: 0 auto;
     background-color: #eee;
@@ -30,7 +30,7 @@ body {
 }
 
 .main{
-    max-width: 100%;
+    width: 100%;
     gap: 5px;
     margin: 0 auto;
     background-color: #eee;
@@ -56,7 +56,7 @@ h3{
 
 .user-container, .task-container {
     background-color: inherit;
-    
+    width: 100%;
     border: 1px solid #333;
     padding: 20px;
     margin-bottom: 30px;
@@ -101,7 +101,36 @@ textarea {
 .delete-user-btn:hover {
     background-color: rgb(231, 91, 91);
 }
-#user-btn, #add-task{
+
+.cancel-task-update-btn, .cancel-update-btn{
+     padding: 10px 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.cancel-task-update-btn:hover {
+    background-color: rgb(231, 91, 91);
+}
+
+.save-update-btn{
+     padding: 10px 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+
+
+#user-btn, #add-task, .save-update-btn, .save-task-update-btn{
      padding: 10px 15px;
     background-color: #68d833;
     color: white;
@@ -112,11 +141,11 @@ textarea {
     transition: background-color 0.3s;
 }
 
-#user-btn, #add-task:hover{
+#user-btn:hover, #add-task:hover{
     background-color: #659666;
 }
 
-.upadate-task-btn, .update-user-btn{
+.update-task-btn, .update-user-btn{
      background-color: rgb(54, 115, 165);
     padding: 10px 15px;;
     color: white;
@@ -127,7 +156,7 @@ textarea {
     transition: background-color 0.3s;
 }
 
-.upadate-task-btn, .update-user-btn:hover{
+.upadate-task-btn:hover, .update-user-btn:hover{
     background-color: rgb(112, 122, 143);
 }
 
